@@ -15,7 +15,7 @@ A Claude Code plugin for generating and managing periodized triathlon training p
 Add this marketplace to Claude Code:
 
 ```
-/plugin marketplace add ericahruby/triathlon-coach
+/plugin marketplace add sirpopsalot/triathlon-coach
 ```
 
 Then install the plugin:
@@ -48,7 +48,7 @@ Add to your project's `.claude/settings.json`:
     "triathlon-coach": {
       "source": {
         "source": "github",
-        "repo": "ericahruby/triathlon-coach"
+        "repo": "sirpopsalot/triathlon-coach"
       }
     }
   }
@@ -62,7 +62,7 @@ Team members will be prompted to install the plugin when they open the project.
 Share the install command:
 
 ```
-/plugin marketplace add ericahruby/triathlon-coach
+/plugin marketplace add sirpopsalot/triathlon-coach
 ```
 
 ## License
