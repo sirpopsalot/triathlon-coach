@@ -1,0 +1,11 @@
+{
+  "name": "triathlon-coach",
+  "version": "1.0.0",
+  "description": "Periodized triathlon training plan generator with Notion and Google Calendar integration",
+  "author": {
+    "name": "EricaH"
+  },
+  "repository": "https://github.com/ericahruby/triathlon-coach",
+  "license": "MIT",
+  "keywords": ["triathlon", "training", "fitness", "notion", "coaching"]
+}

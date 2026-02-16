@@ -1,0 +1,25 @@
+{
+  "name": "triathlon-coach",
+  "owner": {
+    "name": "EricaH"
+  },
+  "metadata": {
+    "description": "Triathlon and endurance training plugins for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "triathlon-coach",
+      "source": ".",
+      "description": "Generate and manage periodized triathlon training plans with Notion integration. Supports multi-event preparation, weekly planning, check-ins, and workout adjustments.",
+      "version": "1.0.0",
+      "author": {
+        "name": "EricaH"
+      },
+      "repository": "https://github.com/ericahruby/triathlon-coach",
+      "license": "MIT",
+      "keywords": ["triathlon", "training", "fitness", "coaching", "notion"],
+      "category": "productivity"
+    }
+  ]
+}
