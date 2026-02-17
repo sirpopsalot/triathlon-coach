@@ -110,9 +110,93 @@ When user struggles, use coaching approach from `references/coaching-persona.md`
 
 ## Integration Notes
 
-**Notion Databases:**
+### Notion
+
+**IMPORTANT:** Use the `claude_ai_Notion` MCP tools (not the local `notion` MCP server) for all
+read and write operations. The local `@notionhq/notion-mcp-server` has a known bug that breaks
+writes to database pages.
+
+**Tools to use:**
+| Operation | Tool |
+|-----------|------|
+| Search workspace | `mcp__claude_ai_Notion__notion-search` |
+| Read page/database | `mcp__claude_ai_Notion__notion-fetch` |
+| Create workout/week entries | `mcp__claude_ai_Notion__notion-create-pages` |
+| Update existing entries | `mcp__claude_ai_Notion__notion-update-page` |
+
+**Databases:**
 - Weekly Plans: `collection://7f4e012f-fc39-4ac8-b9d2-4cc2498a24ff`
 - Workouts: `collection://12dbbef6-4eec-4a2d-b45b-3fa7bf66a7ed`
+
+**Creating workout entries:**
+Use `notion-create-pages` with `data_source_id` as the parent type:
+```json
+{
+  "parent": {"data_source_id": "12dbbef6-4eec-4a2d-b45b-3fa7bf66a7ed", "type": "data_source_id"},
+  "pages": [{
+    "properties": {
+      "Workout": "Workout name (title)",
+      "Type": "Bike - Indoor|Bike - Outdoor|Run|Aqua Jog|Swim|Strength|Yoga/Mobility|Rest|Hike/walk|Warmup",
+      "date:Date:start": "2026-02-16",
+      "date:Date:is_datetime": 0,
+      "Planned Duration (min)": 45,
+      "Planned Distance (mi)": 15,
+      "Notes": "Workout details",
+      "Completed": "__NO__"
+    }
+  }]
+}
+```
+
+**Workouts schema:**
+| Property | Type | Notes |
+|----------|------|-------|
+| Workout | title | Workout name |
+| Type | select | Bike - Indoor, Bike - Outdoor, Run, Aqua Jog, Swim, Strength, Yoga/Mobility, Rest, Hike/walk, Warmup |
+| Date | date | Use `date:Date:start`, `date:Date:end`, `date:Date:is_datetime` |
+| Planned Duration (min) | number | |
+| Planned Distance (mi) | number | |
+| Actual Duration (min) | number | |
+| Actual Distance (mi) | number | |
+| Completed | checkbox | `__YES__` or `__NO__` |
+| How It Felt | select | Great, Good, Okay, Tough, Struggled |
+| RPE (1-10) | number | |
+| Notes | text | |
+| Week | relation | Links to Weekly Plans collection |
+
+**Creating weekly plan entries:**
+```json
+{
+  "parent": {"data_source_id": "7f4e012f-fc39-4ac8-b9d2-4cc2498a24ff", "type": "data_source_id"},
+  "pages": [{
+    "properties": {
+      "Week": "Week 5",
+      "Phase": "Century Build|Taper|Recovery|Alcatraz Build",
+      "Status": "Upcoming|Current|Completed",
+      "date:Start Date:start": "2026-03-03",
+      "date:Start Date:is_datetime": 0,
+      "Bike Miles Planned": 95,
+      "Run Minutes Planned": 30,
+      "Swim Sessions": 1,
+      "Focus": "Volume + climbing",
+      "Notes": "Build phase begins"
+    }
+  }]
+}
+```
+
+**Weekly Plans schema:**
+| Property | Type | Notes |
+|----------|------|-------|
+| Week | title | e.g. "Week 5" |
+| Phase | select | Century Build, Taper, Recovery, Alcatraz Build |
+| Status | select | Upcoming, Current, Completed |
+| Start Date | date | Use `date:Start Date:start`, `date:Start Date:end`, `date:Start Date:is_datetime` |
+| Bike Miles Planned | number | |
+| Run Minutes Planned | number | |
+| Swim Sessions | number | |
+| Focus | text | |
+| Notes | text | |
 
 **Activity Type Mapping (Strava → Notion):**
 | Strava | Notion |
