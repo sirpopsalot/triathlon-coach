@@ -82,6 +82,14 @@ Endurance training system that composes multiple skills to take an athlete from 
 | `references/coaching-persona.md` | Coach Claude personality and approach |
 | `references/workouts.md` | Exercise library |
 
+## Date/Time Rules
+
+**CRITICAL: Always verify day-of-week before scheduling.**
+- Run `cal <month> <year>` to confirm what day of the week a date falls on. NEVER guess.
+- User timezone: Pacific Time (`-08:00` PST / `-07:00` PDT, daylight saving starts March 8 2026)
+- All Notion datetimes must include the timezone offset (e.g. `2026-02-17T09:00:00-08:00`)
+- When reading dates from Notion in UTC (Z suffix), convert to Pacific before displaying to user
+
 ## User Context
 
 **Current Goals:**
