@@ -137,7 +137,7 @@ Use `notion-create-pages` with `data_source_id` as the parent type:
     "properties": {
       "Workout": "Workout name (title)",
       "Type": "Bike - Indoor|Bike - Outdoor|Run|Aqua Jog|Swim|Strength|Yoga/Mobility|Rest|Hike/walk|Warmup",
-      "date:Date:start": "2026-02-16",
+      "date:Date:start": "2026-02-16T08:00:00-08:00",
       "date:Date:is_datetime": 0,
       "Planned Duration (min)": 45,
       "Planned Distance (mi)": 15,
@@ -212,7 +212,7 @@ Use `notion-create-pages` with `data_source_id` as the parent type:
 Use type "Prep" for non-workout tasks like meal prep or gear packing. Schedule with a specific
 time so they appear on the calendar. Example:
 ```json
-{"Workout": "Prep: Overnight Oats + Pack Swim Bag", "Type": "Prep", "date:Date:start": "2026-02-17T19:30:00", "date:Date:is_datetime": 1, "Planned Duration (min)": 15, "Notes": "Details of what to prep"}
+{"Workout": "Prep: Overnight Oats + Pack Swim Bag", "Type": "Prep", "date:Date:start": "2026-02-17T19:30:00-08:00", "date:Date:is_datetime": 1, "Planned Duration (min)": 15, "Notes": "Details of what to prep"}
 ```
 
 ### Google Calendar
@@ -220,4 +220,4 @@ time so they appear on the calendar. Example:
 No direct Google Calendar API. Calendar events are handled via **Notion Calendar sync**:
 - Notion Calendar (calendar.notion.so) syncs the Workouts database `Date` property to Google Calendar
 - Creating a workout in Notion with a date = automatic calendar event
-- Always include `date:Date:start` and `date:Date:is_datetime` when creating workouts so they appear on the calendar
+- Always include `date:Date:start` (with `-08:00` timezone offset) and `date:Date:is_datetime: 1` when creating workouts so they appear on the calendar with correct times
