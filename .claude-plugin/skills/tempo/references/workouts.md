@@ -6,18 +6,18 @@
 
 | Exercise | Sets/Reps | Equipment | Notes |
 |----------|-----------|-----------|-------|
-| Sumo deadlift | 3x10 | Barbell, moderate weight | Wide stance, toes out |
-| Banded clamshells | 1x15/side | Band around knees | Slow and controlled |
-| Single-leg RDL | 1x10/side | 30 lb kettlebell | Hinge at hip, flat back |
-| Kettlebell swings | 3x15 | 30 lb kettlebell | Hip snap, not arm pull |
-| Banded lateral walks | 1x15 steps/direction | Band around ankles | Stay low, don't waddle |
+| Sumo deadlift | 3×10 | Barbell, moderate weight | Wide stance, toes out |
+| Banded clamshells | 1×15/side | Band around knees | Slow and controlled |
+| Single-leg RDL | 1×10/side | 30 lb kettlebell | Hinge at hip, flat back |
+| Kettlebell swings | 3×15 | 30 lb kettlebell | Hip snap, not arm pull |
+| Banded lateral walks | 1×15 steps/direction | Band around ankles | Stay low, don't waddle |
 
 ### Mobility Block (10 min)
 
 | Stretch | Duration | Notes |
 |---------|----------|-------|
 | Half-kneeling hip flexor | 60s/side | Squeeze glute, tuck pelvis |
-| 90/90 stretch | 60s/side | Both legs at 90 degrees, rotate torso |
+| 90/90 stretch | 60s/side | Both legs at 90°, rotate torso |
 | Couch stretch | 45-60s/side | Back foot on wall or couch |
 | Pigeon pose | 60s/side | Keep hips square |
 
@@ -30,7 +30,7 @@
 
 ### Intervals (45 min)
 - 10 min warmup
-- 4x3 min pointed effort (Zone 4) with 2 min recovery
+- 4×3 min pointed effort (Zone 4) with 2 min recovery
 - 10 min cooldown
 
 ## Run/Walk Progression
@@ -59,8 +59,8 @@
 
 ### Midweek Solo (45 min)
 - 200 warmup (mix of strokes)
-- 4x100 freestyle with 20s rest
-- 4x50 drill/swim by 25
+- 4×100 freestyle with 20s rest
+- 4×50 drill/swim by 25
 - 200 cooldown
 
 ## Long Ride Nutrition

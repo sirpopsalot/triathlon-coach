@@ -26,8 +26,10 @@
 
 - **Best training windows**: Early morning or lunch
 - **Protect**: Afternoons for focused brain work
-- **Avoid**: Evening workouts (loses motivation when dark)
+- **Avoid**: Evening workouts (loses motivation when dark) — EXCEPT Zwift is okay in evening
 - **Monday 6pm**: Protected swim coaching session (best coaching available)
+- **Zwift**: Evening works (indoor, controlled environment)
+- **Pool work**: Morning only (7am-1pm) except Monday coached
 - **Schedule type**: Flexible (no 9-to-5), but needs structure
 
 ## Equipment
@@ -47,7 +49,8 @@
 
 ### Pool Access
 - Monday 6pm: Free coached session
-- Midweek mornings: Open lap swim available
+- Midweek mornings: Open lap swim 7am-1pm
+- Aqua jog: Same hours, Thursday morning preferred
 
 ## Preferences
 
