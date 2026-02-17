@@ -152,7 +152,7 @@ Use `notion-create-pages` with `data_source_id` as the parent type:
 | Property | Type | Notes |
 |----------|------|-------|
 | Workout | title | Workout name |
-| Type | select | Bike - Indoor, Bike - Outdoor, Run, Aqua Jog, Swim, Strength, Yoga/Mobility, Rest, Hike/walk, Warmup |
+| Type | select | Bike - Indoor, Bike - Outdoor, Run, Aqua Jog, Swim, Strength, Yoga/Mobility, Rest, Hike/walk, Warmup, Prep |
 | Date | date | Use `date:Date:start`, `date:Date:end`, `date:Date:is_datetime` |
 | Planned Duration (min) | number | |
 | Planned Distance (mi) | number | |
@@ -207,6 +207,13 @@ Use `notion-create-pages` with `data_source_id` as the parent type:
 | Swim | Swim |
 | WeightTraining | Strength |
 | Yoga | Yoga/Mobility |
+
+**Prep entries:**
+Use type "Prep" for non-workout tasks like meal prep or gear packing. Schedule with a specific
+time so they appear on the calendar. Example:
+```json
+{"Workout": "Prep: Overnight Oats + Pack Swim Bag", "Type": "Prep", "date:Date:start": "2026-02-17T19:30:00", "date:Date:is_datetime": 1, "Planned Duration (min)": 15, "Notes": "Details of what to prep"}
+```
 
 ### Google Calendar
 
