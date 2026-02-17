@@ -4,7 +4,7 @@ description: >
   Endurance training system for multi-sport athletes. Manages goals, assesses fitness,
   builds periodized plans, tracks progress, and provides coaching support. Use when user
   asks about training, workouts, races, fitness, or goals. Integrates with Strava (activities),
-  Garmin (recovery/sleep), Notion (tracking), and Google Calendar (scheduling).
+  Garmin (recovery/sleep), and Notion (tracking + calendar sync via Notion Calendar).
 
   Triggers on: "what's my workout", "how's my training", "plan my week", "Sunday check-in",
   "should I train today", "am I ready", "add a goal", "how's my fitness", "I missed a workout",
@@ -69,7 +69,7 @@ Endurance training system that composes multiple skills to take an athlete from 
 | **Strava** | Activities, distances, HR, routes | `get-recent-activities`, `get-activity-details` |
 | **Garmin** | Sleep, HRV, resting HR, stress, body battery | `get_sleep_data`, `get_health_metrics`, `get_daily_overview` |
 | **Notion** | Weekly plans, workout tracking | Workouts DB, Weekly Plans DB |
-| **Google Calendar** | Schedule visibility | Read events, find free time |
+| **Google Calendar** | Schedule visibility | Via Notion Calendar sync (no direct API) |
 
 ## Key Files
 
@@ -207,3 +207,10 @@ Use `notion-create-pages` with `data_source_id` as the parent type:
 | Swim | Swim |
 | WeightTraining | Strength |
 | Yoga | Yoga/Mobility |
+
+### Google Calendar
+
+No direct Google Calendar API. Calendar events are handled via **Notion Calendar sync**:
+- Notion Calendar (calendar.notion.so) syncs the Workouts database `Date` property to Google Calendar
+- Creating a workout in Notion with a date = automatic calendar event
+- Always include `date:Date:start` and `date:Date:is_datetime` when creating workouts so they appear on the calendar
