@@ -15,7 +15,7 @@ An endurance training system for multi-sport athletes, built as a Claude Code pl
 Add this marketplace to Claude Code:
 
 ```
-/plugin marketplace add sirpopsalot/triathlon-coach
+/plugin marketplace add sirpopsalot/tempo
 ```
 
 Then install the plugin:
@@ -48,7 +48,7 @@ Add to your project's `.claude/settings.json`:
     "tempo": {
       "source": {
         "source": "github",
-        "repo": "sirpopsalot/triathlon-coach"
+        "repo": "sirpopsalot/tempo"
       }
     }
   }
@@ -62,7 +62,7 @@ Team members will be prompted to install the plugin when they open the project.
 Share the install command:
 
 ```
-/plugin marketplace add sirpopsalot/triathlon-coach
+/plugin marketplace add sirpopsalot/tempo
 ```
 
 ## License
