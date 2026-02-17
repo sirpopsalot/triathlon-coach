@@ -1,5 +1,5 @@
 {
-  "name": "triathlon-coach",
+  "name": "tempo",
   "version": "1.0.0",
   "description": "Endurance training system for multi-sport athletes with Strava, Garmin, Notion, and Google Calendar integration",
   "author": {
@@ -7,7 +7,7 @@
   },
   "repository": "https://github.com/sirpopsalot/triathlon-coach",
   "license": "MIT",
-  "keywords": ["triathlon", "training", "fitness", "notion", "coaching"],
+  "keywords": ["endurance", "triathlon", "training", "fitness", "notion", "coaching"],
   "skills": [
     {
       "name": "tempo",

@@ -1,24 +1,24 @@
 {
-  "name": "triathlon-coach",
+  "name": "tempo",
   "owner": {
     "name": "EricaH"
   },
   "metadata": {
-    "description": "Triathlon and endurance training plugins for Claude Code",
+    "description": "Endurance training system for multi-sport athletes",
     "version": "1.0.0"
   },
   "plugins": [
     {
-      "name": "triathlon-coach",
+      "name": "tempo",
       "source": ".",
-      "description": "Generate and manage periodized triathlon training plans with Notion integration. Supports multi-event preparation, weekly planning, check-ins, and workout adjustments.",
+      "description": "Endurance training system for multi-sport athletes with Strava, Garmin, Notion, and Google Calendar integration.",
       "version": "1.0.0",
       "author": {
         "name": "EricaH"
       },
       "repository": "https://github.com/sirpopsalot/triathlon-coach",
       "license": "MIT",
-      "keywords": ["triathlon", "training", "fitness", "coaching", "notion"],
+      "keywords": ["endurance", "triathlon", "training", "fitness", "coaching", "notion"],
       "category": "productivity"
     }
   ]

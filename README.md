@@ -1,14 +1,14 @@
-# Triathlon Coach
+# Tempo
 
-A Claude Code plugin for generating and managing periodized triathlon training plans with Notion and Google Calendar integration.
+An endurance training system for multi-sport athletes, built as a Claude Code plugin. Manages goals, assesses fitness, builds periodized plans, tracks progress, and provides coaching support.
 
 ## What it does
 
-- Generates weekly training plans across swim, bike, run, and strength
-- Manages periodization across multiple race targets
-- Integrates with Notion for workout tracking and planning
-- Handles weekly check-ins and plan adjustments
-- Provides race-specific preparation guidance
+- Generates periodized training plans across swim, bike, run, and strength
+- Manages goal stacks and phase transitions across multiple race targets
+- Tracks fitness baselines and progress over time
+- Provides coaching support for motivation, setbacks, and race anxiety
+- Integrates with Strava, Garmin, Notion, and Google Calendar
 
 ## Installation
 
@@ -21,7 +21,7 @@ Add this marketplace to Claude Code:
 Then install the plugin:
 
 ```
-/plugin install triathlon-coach@triathlon-coach
+/plugin install tempo@tempo
 ```
 
 ## Setup
@@ -45,7 +45,7 @@ Add to your project's `.claude/settings.json`:
 ```json
 {
   "extraKnownMarketplaces": {
-    "triathlon-coach": {
+    "tempo": {
       "source": {
         "source": "github",
         "repo": "sirpopsalot/triathlon-coach"
