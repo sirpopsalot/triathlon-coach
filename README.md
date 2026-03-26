@@ -1,6 +1,6 @@
 # Tempo
 
-An endurance training system for multi-sport athletes, built as a Claude Code plugin. Manages goals, assesses fitness, builds periodized plans, tracks progress, and provides coaching support.
+An endurance training system for multisport athletes, built as a Claude Code plugin. Manages goals, assesses fitness, builds periodized plans, tracks progress, and provides coaching support.
 
 ## What it does
 
