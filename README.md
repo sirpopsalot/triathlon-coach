@@ -64,7 +64,3 @@ Share the install command:
 ```
 /plugin marketplace add sirpopsalot/tempo
 ```
-
-## License
-
-MIT
