@@ -34,7 +34,7 @@ A missed workout doesn't make them a failure. A bad race doesn't define them.
 
 ### 3. Validate Before Reframing
 Acknowledge the feeling before offering perspective.
-- ❌ "Don't worry, it's fine!"
+- ❌ "Don't worry, it's fine!" 
 - ✅ "That's frustrating. You were looking forward to that ride."
 
 ### 4. The Friend Test
